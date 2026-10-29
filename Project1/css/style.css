@@ -1,7 +1,8 @@
+body { font-family: Arial, sans-serif; }
 header {
     background-color: #0066cc;
     color: white;
-    padding: 20px;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +11,7 @@ header {
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 0;
 }
 nav {
     display: flex;
@@ -20,7 +21,7 @@ nav {
     background-color: white;
     padding: 40px;
     margin: 30px auto;
-    max-width: 800px;
+    max-width: 1000px;
     border-radius: 10px;
     border: 1px solid lightgray;
     display: flex;
@@ -36,12 +37,12 @@ nav {
 }
 
 .graduation-icon {
-    font-size: 96px;
-    text-align: right;
+    font-size: 110px;
+    text-align: center;
     background-color: #0066cc;
-    width: 120px;
-    height: 120px;
-    border-radius: 50px;
+    width: 200px;
+    height: 190px;
+    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +51,8 @@ nav {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .feature-box {
@@ -57,8 +60,26 @@ nav {
     padding: 20px;
     border-radius: 10px;
     flex: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
 }
 
+.feature-box span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+.feature-box:nth-child(2) span {
+    background-color: #28a745;
+}
+
+.feature-box:nth-child(3) span {
+    background-color: #6f42c1;
+}
 .features {
     padding: 30px;
 }
@@ -148,5 +169,10 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 30px;
+}
+.feature-icon {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 10px;
 }
     
